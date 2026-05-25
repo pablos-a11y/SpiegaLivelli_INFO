@@ -72,12 +72,12 @@ const LEVELS: LevelConfig[] = [
 
 // Starter prompts to quickly hook the student with practical Italian subject concepts
 const STARTER_CONCEPTS = [
-  { text: "La fotosintesi clorofilliana", subject: "Biologia", tag: "Fotosintesi" },
-  { text: "L'impero feudale di Carlo Magno", subject: "Storia", tag: "Feudalesimo" },
-  { text: "Il principio di indeterminazione di Heisenberg", subject: "Fisica", tag: "Heisenberg" },
-  { text: "La deriva dei continenti", subject: "Scienze", tag: "Tettonica" },
-  { text: "La Critica della ragion pura di Kant", subject: "Filosofia", tag: "Kant" },
-  { text: "Il concetto di limite matematico", subject: "Matematica", tag: "Limiti" }
+  { text: "Come funziona una VPN e a cosa serve", subject: "Reti & Sicurezza", tag: "VPN" },
+  { text: "Cos'è il Phishing e come difendersi", subject: "Sicurezza Informatica", tag: "Phishing" },
+  { text: "Spiega la differenza tra HTTP e HTTPS", subject: "Sistemi e Reti", tag: "Protocolli" },
+  { text: "Come funziona la crittografia a chiave pubblica", subject: "Crittografia", tag: "Sicurezza" },
+  { text: "A cosa serve e come funziona un Firewall", subject: "Sistemi di Rete", tag: "Firewall" },
+  { text: "Che cos'è l'autenticazione MFA (a più fattori)", subject: "Cybersecurity", tag: "Identità" }
 ];
 
 export default function App() {
@@ -424,7 +424,7 @@ export default function App() {
                 </h1>
                 <span className="text-[10px] font-mono tracking-widest bg-slate-900 border border-slate-800 rounded px-1.5 py-0.5 font-bold text-slate-400">v0.9</span>
               </div>
-              <p className="text-xs text-slate-400 hidden sm:block">Scegli il livello della classe e scrivi il concetto da spiegare</p>
+              <p className="text-xs text-slate-400 hidden sm:block">Informatica, reti e sicurezza cyber a misura di studente</p>
             </div>
           </div>
 
@@ -462,7 +462,7 @@ export default function App() {
               Benvenuto su SpiegaLivelli! 📚
             </h2>
             <p className="text-sm text-slate-450 text-slate-400 leading-relaxed">
-              Scegli il livello scolastico per modulare la spiegazione. Puoi inserire formule, idee complesse, oppure allegare immagini di schemi e file PDF scolastici per estrarne i concetti.
+              Scegli il livello scolastico per modulare la spiegazione. Approfondisci l'hardware, le reti, lo sviluppo software o la sicurezza cyber, oppure allega schemi, immagini di codice e file PDF didattici per estrarne i concetti chiave.
             </p>
           </div>
 
@@ -528,7 +528,7 @@ export default function App() {
                       <Sparkles className="w-6 h-6 text-slate-500 animate-pulse" />
                     </div>
                     <h3 className="text-sm font-semibold text-slate-200">Nessuna spiegazione richiesta ancora</h3>
-                    <p className="text-xs text-slate-500 mt-1">Scegli una delle tracce o digita il tuo concetto scolastico da studiare.</p>
+                    <p className="text-xs text-slate-500 mt-1">Scegli una delle tracce o digita il concetto informatico o cyber da studiare insieme.</p>
                   </div>
 
                   <div className="max-w-2xl mx-auto w-full">
@@ -795,7 +795,9 @@ export default function App() {
           <BookOpen className="w-5 h-5 text-slate-500 shrink-0 mt-0.5" />
           <div className="text-xs text-slate-400 leading-relaxed">
             <span className="font-semibold text-slate-200">Normativa di tutela didattica: </span> 
-            SpiegaLivelli è programmato per promuovere la comprensione profonda ed autonoma. L'assistente spiegherà le teorie e i metodi risolutivi di qualsiasi concetto scientifico o letterario, rifiutandosi fermamente di compilare esercizi scolastici pronti o compiere traduzioni passive.
+            SpiegaLivelli è programmato per promuovere l'apprendimento autonomo dell'informatica. L'assistente spiegherà le architetture, i protocolli e i framework di sicurezza informatica, rifiutandosi fermamente di svolgere interi esercizi scolastici, scrivere codice pronto per i compiti o compiere configurazioni non autorizzate.
+            <br />
+            <span className="text-[11px] text-slate-500 block mt-1">N.B. L'assistente fa riferimento esclusivamente a computer, reti, sistemi e cybersecurity.</span>
           </div>
         </div>
 
